@@ -32,12 +32,7 @@ file=${sys}/lambda_${n_lambda}/02_equil_r${rep}/npt2.tpr
  
  done
  
- #lambda=lambda_$n_lambda
- #sum_lambdas=`awk -v lambda=$lambda '$0~lambda {sum+=$4} END {print sum}' progress`
- #percent_lambda=$(((sum_lambdas*100)/5))
- #echo lambda_$n_lambda = $percent_lambda %
-
-
+ 
  done
 
 final_percent_lambda=`awk -v sys=$sys '$0~sys {sum+=$4} END {print sum}' progress`
