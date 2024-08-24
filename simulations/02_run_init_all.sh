@@ -8,7 +8,7 @@ do
 n=`s-id afortuna | tail -n +3 | wc -l`
 #n=`s-tot | grep $USER | awk '{print $7}'`
 
-while [ $n -gt 300 ]
+while [ $n -gt 100 ]
 
 do
 n=`s-id afortuna | tail -n +3 | wc -l`
