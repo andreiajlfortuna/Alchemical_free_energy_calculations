@@ -73,10 +73,6 @@ $grom editconf -f ${sys}.gro -o ${sys}_box.gro -c -d 1.5 -bt cubic
 # add water molecules
 $grom solvate -cp ${sys}_box.gro -cs spc216.gro -maxsol $wat_mobley -o ${sys}_solv.gro -p ${sys}.top 
 
-wat_ours=`tail -n1 ${sys}.top | awk '{print $2}'`
-echo $sys $wat_mobley $wat_ours >> ../water_check.dat
-
-
 sed -i '3,5d' ${sys}.top 
 sed -i '2 a #include "amber99sb-ildn.ff/forcefield.itp"' ${sys}.top
 
