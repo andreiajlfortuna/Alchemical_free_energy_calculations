@@ -1,6 +1,6 @@
 
 
-**01_prepare_system.sh** 
+**01_prepare_systems.sh** 
 
 
 - Modifies the GMX topology files when EPs are present;
