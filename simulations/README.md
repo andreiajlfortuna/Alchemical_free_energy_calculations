@@ -19,7 +19,7 @@
 
 *You need to have the mdp files, run_init.sh, run_init.dat, slurm_MD.dat, slurm_MD.sh (the .sh files send jobs to the cluster. You can run the simulations locally, you just have to adapt the code).
 
-**02_run_init_all.sh**
+**02_run_init_all.sh** 
 
 - Sends jobs to cluster to run minimization and initialization. In the initialization phase, 3 replicates are going to be considered per lambda point (20 lambda points). Therefore, we have 3 x 20 simulations per compound (in this example, I have the smallest dataset that I studied in this work, just 12 compounds, in total: 720. For the chlorinated compounds I had 103 molecules! That's a lot of jobs as you can imagine!).
 
@@ -30,5 +30,16 @@
 
 - There can be cases where you have a lot of jobs running and it would be nice to check the progress of your simulations. This script does that by checking the npt2.tpr files in each folder (compound, lambda point, replicate). The best part of this script is that it prints a pegasus!!! Of course, you can change this, but I think it really makes a difference!
 
-**04_
+**04_prod_all.sh**
+
+- Similarly to 02_run_init_all.sh, this script sends jobs to the cluster to run the production phase. 
+
+
+**05_check_progress_prod.sh**
+
+- Similarly to 03_check_progress_init.sh, this script checks the progress of your simulations by checking if the 001.xtc file exists. You can customize this, but don't forget to print a magical creature :)
+
+**06_analysis**
+
+- 
  
