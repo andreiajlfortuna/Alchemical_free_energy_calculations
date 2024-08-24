@@ -10,6 +10,7 @@ do
 n=`s-id afortuna | tail -n +3 | wc -l`
 #n=`s-tot | grep $USER | awk '{print $7}'`
 
+#you can change the number of jobs that you want to submit. It depends on how many processing units and colleagues you have
 while [ $n -gt 100 ]
 
 do
