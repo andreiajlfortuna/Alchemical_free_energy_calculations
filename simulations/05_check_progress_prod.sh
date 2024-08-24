@@ -1,3 +1,5 @@
+#! /bin/bash
+
 rm progress
 
 tot_lambdas=20
