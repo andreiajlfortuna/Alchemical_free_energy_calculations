@@ -25,7 +25,7 @@ for halogen in halogens:
     result_file = f"RESULTS_{halogen}_{method}"
     
     # Read the results file into a pandas DataFrame
-    df = pd.read_csv(result_file, sep='\s+')
+    df = pd.read_csv(result_file, sep=r'\s+')  # Use raw string literal to avoid escape sequence issue
 
     # Ensure the columns exist
     if 'EXP_V' not in df.columns or 'rep_mean' not in df.columns:
