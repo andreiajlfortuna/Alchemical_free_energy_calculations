@@ -1,4 +1,4 @@
-# 🔮 Alchemical Free Energy Calculations
+# Alchemical Free Energy Calculations
 
 This repository contains **scripts and tools** for running **alchemical free energy calculations** with **Extra Points (EPs)** to describe **halogen anisotropy**.   
 If you're interested in learning more about EPs, check out this paper:  
@@ -37,8 +37,8 @@ However, you can modify it based on your needs.
 - **Initialization** (3 replicates per lambda point, with **20 lambda points**)  
 
 #### 📊 *Total simulations:*  
- 📌 *12 compounds → 720 simulations!*  
- 📌 *For chlorinated compounds → 103 molecules!* *(Over 6000 simulations!)*  
+  *12 compounds → 720 simulations!*  
+  *For chlorinated compounds → 103 molecules!* *(Over 6000 simulations!)*  
 
 #### ⚠️ **Important:**  
 - The script contains a **while loop** to prevent excessive job submissions (**default max = 100**).  
